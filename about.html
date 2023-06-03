@@ -7,71 +7,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Landing Page/About</title>
         <style>
-             header {
+            header {
                 font-family: "sans-serif";
                 width: 100%;
                 height: 100vh;
                 background: linear-gradient(rgba(184, 4, 31, 0.82), rgba(241, 201, 208, 0.1)), url('images/bg3.jpeg');
                 background-size: cover;
             }
+
             marquee {
                 color: white;
                 font-size: 2vw;
             }
+
             nav {
-        display:flex;
-        height:5vw;
-        justify-content: space-between;
-        align-items:center;
-      }
-      nav a{
-        text-decoration: none;
-        color:white;
-        font-size: 1.5vw;
-        margin:0vw 3vw;
-      }
-      nav a:hover{
-        font-size:1.8vw;
-               border-bottom:1px solid white ;
-      }
-            .container {
                 display: flex;
-                position: relative;
-                background: linear-gradient(rgba(184, 4, 31, 0.82), rgba(241, 201, 208, 0.1)), url('images/bg3.jpeg');
+                height: 5vw;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: white;
+                font-size: 2.5vw;
+                margin: 0vw 3vw;
+            }
+
+            nav a:hover {
+                font-size: 2.8vw;
+                border-bottom: 1px solid white;
+            }
+
+            /* .container {
+                       background: linear-gradient(rgba(184, 4, 31, 0.82), rgba(241, 201, 208, 0.1)), url('images/bg3.jpeg');
                 background-size: cover;
-            }
-
-            .card {
-                /* padding: 1vw; */
-                box-shadow: 1vw 1vw 2vw rgb(168, 74, 71);
-                /* height:80vh; */
-                height:100vh; 
-
-            }
-
-            #card1 {
-                width: 30%;
-            }
+            } */
 
             img {
-                width: 80%;
-                /* height:80vh; */
-                /* border-radius: 70%; */
+                display:block;
+                margin :auto;
+                height: 50%;
                 padding: 2vw;
+                border-top-left-radius :48%;
+                border-top-right-radius: 48%;
 
-            }
-
-            #card2 {
-                width: 70%;
-                /* position:relative; */
-                color: rgb(131, 4, 4);
             }
 
             .h-txt {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                margin: -10% 0 0 -15%;
                 font-size: 3vw;
                 text-align: center;
             }
@@ -93,17 +76,14 @@
 
         <header>
             <nav>
-                <div> <a href="index.html" class="back">&lt;- Back</a></div>  
-                <div>  <a href="bg-generate.html" class="front">Next -&gt;</a></div>
+                <div> <a href="index.html" class="back">&lt;- Back</a></div>
+                <div> <a href="bg-generate.html" class="front">Next -&gt;</a></div>
             </nav>
             <marquee>
                 <pre>Mallika Agarwal   |   Full Stack Developer</pre>
             </marquee>
-            <div class="container">
-                <div class="card" id="card1">
-                    <img src="images/self photo.jpg" alt="Photp here">
-                </div>
-                <div class="card" id="card2">
+                <img src="images/self photo.jpg" alt="Photp here">
+                <div>
                     <section class="h-txt">
                         <span>I am</span>
                         <h1>Mallika Agarwal</h1>
@@ -112,7 +92,6 @@
                     </section>
 
                 </div>
-            </div>
 
         </header>
     </body>
